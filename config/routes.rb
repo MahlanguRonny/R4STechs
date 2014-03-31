@@ -1,4 +1,10 @@
 R4STechs::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/about"
+  get "static_pages/contactus"
+  get "static_pages/account"
+  get "static_pages/shoppingCart"
+  get "static_pages/login"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
