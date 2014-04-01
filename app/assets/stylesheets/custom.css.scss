@@ -1,0 +1,50 @@
+@import "bootstrap";
+
+body
+{
+	padding-top:55px;
+
+}
+html 
+{
+  overflow-y: scroll;
+}
+section 
+{
+  overflow: auto;
+}
+.center 
+{
+  text-align: center;
+}
+h1,h2,h3,h4,h5
+{
+	line_height:2
+}
+h1
+{
+	font-size:2;
+	text-align:center;
+}
+#R4SLogo
+{
+	float: left;
+	margin-right: 10px;
+	font-size: 1.7em;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-top: 9px;
+	font-weight: bold;
+	line-height: 1;
+	font-style:italic;
+}
+#R4SLogo:hover 
+{
+  color: #008000;
+  text-decoration: underline;
+}
+.container
+{
+	background-color: #BDB76B;
+}
