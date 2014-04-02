@@ -1,10 +1,10 @@
 R4STechs::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/contactus"
-  get "static_pages/account"
-  get "static_pages/shoppingCart"
-  get "static_pages/login"
+  root  'static_pages#home'
+  match '/about', to: 'static_pages#about', via: 'get'
+  match '/contactus', to: 'static_pages#contactus', via: 'get'
+  match '/account', to: 'static_pages#account', via: 'get'
+  match '/shoppingCart', to: 'static_pages#shoppingCart', via: 'get'
+  match '/login', to: 'static_pages#login', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
