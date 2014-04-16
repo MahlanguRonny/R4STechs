@@ -1,4 +1,6 @@
 R4STechs::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users
   root  'static_pages#home'
   match '/about', to: 'static_pages#about', via: 'get'
