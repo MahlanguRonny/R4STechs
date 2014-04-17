@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Mouse = Category.create! :name => "Mouse"
+Monitor = Category.create! :name => "Monitor"
+
+Compac = Supplier.create! :name => "Compac"
+LG = Supplier.create! :name => "LG"
+
