@@ -78,6 +78,6 @@ R4STechs::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
   #config/environments/production.rb/ config.assets.compile = true;
-  config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = true
   config.assets.precompile += %w[active_admin.css active_admin.js print.css]
 end
