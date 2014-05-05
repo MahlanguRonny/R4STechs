@@ -1,4 +1,6 @@
 R4STechs::Application.routes.draw do
+  get "catalog/MyCatalog"
+  get "store/catalog"
   resources :store_products
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -10,6 +12,7 @@ R4STechs::Application.routes.draw do
   match '/account', to: 'static_pages#account', via: 'get'
   match '/shoppingCart', to: 'static_pages#shoppingCart', via: 'get'
   match '/login', to: 'static_pages#login', via: 'get'
+  match '/catalog', to: 'catalog#MyCatalog', via: 'get' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
