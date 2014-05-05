@@ -1,13 +1,10 @@
 R4STechs::Application.routes.draw do
-<<<<<<< HEAD
   resources :line_items
 
   resources :carts
-
-=======
   get "catalog/MyCatalog"
   get "store/catalog"
->>>>>>> presenting-products
+
   resources :store_products
 
   devise_for :admin_users, ActiveAdmin::Devise.config
