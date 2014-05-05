@@ -1,4 +1,6 @@
 R4STechs::Application.routes.draw do
+  resources :store_products
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
