@@ -14,5 +14,6 @@ class StoreProduct < ActiveRecord::Base
 		else
 		errors[:base] << "Line Items present"
 		return false
+		end
 	end
 end
