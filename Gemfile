@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
-gem 'activeadmin', github: 'gregbell/active_admin'
+#gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'rails', '4.0.4'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
