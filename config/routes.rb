@@ -1,4 +1,12 @@
 R4STechs::Application.routes.draw do
+  resources :my_items
+
+  resources :caarts
+
+  get "cataloq/mycatalog"
+  get "product_catalog/index"
+  resources :components
+
   resources :line_items
 
   resources :carts
@@ -16,7 +24,10 @@ R4STechs::Application.routes.draw do
   match '/account', to: 'static_pages#account', via: 'get'
   match '/shoppingCart', to: 'static_pages#shoppingCart', via: 'get'
   match '/login', to: 'static_pages#login', via: 'get'
-  match '/catalog', to: 'catalog#MyCatalog', via: 'get' 
+  #match '/productcatalog', to: 'productcatalog#productcatalog', via: 'get'
+  match '/component', to: 'component#components', via: 'get'
+  match '/cataloq', to: 'cataloq#mycatalog', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

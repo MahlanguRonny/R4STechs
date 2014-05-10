@@ -1,0 +1,29 @@
+<h1>Listing my_items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Caart</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_items.each do |my_item| %>
+      <tr>
+        <td><%= my_item.component_id %></td>
+        <td><%= my_item.caart_id %></td>
+        <td><%= link_to 'Show', my_item %></td>
+        <td><%= link_to 'Edit', edit_my_item_path(my_item) %></td>
+        <td><%= link_to 'Destroy', my_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My item', new_my_item_path %>

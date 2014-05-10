@@ -1,0 +1,6 @@
+<h2>Your Pragmatic Cart</h2>
+<ul>
+<% for item in @cart.my_items %>
+<li><%= item.quantity %> &times; <%= item.component.name %></li>
+<% end %>
+</ul>
