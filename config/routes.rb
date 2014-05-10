@@ -14,8 +14,7 @@ R4STechs::Application.routes.draw do
   get "store/catalog"
 
   resources :store_products
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
+, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
   root  'static_pages#home'
