@@ -82,4 +82,27 @@ R4STechs::Application.configure do
   config.action_mailer.default_url_options = { :host => "http:/heroku.com" }
   config.assets.initialize_on_precompile = true
   config.assets.precompile += %w[active_admin.css active_admin.js print.css]
+
+
+
+  config.action_mailer.default_url_options = { :host => 'http:/heroku.com' }
+# ActionMailer Config
+# Setup for production - deliveries, no errors raised
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
+config.action_mailer.default :charset => "utf-8"
+
+
+
+config.action_mailer.smtp_settings = {
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "http:/heroku.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV["MahlanguRonny@gmail.com"],
+  password: ENV["raunny870928"]
+}
+
 end
