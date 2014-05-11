@@ -1,0 +1,17 @@
+<%= form_for(@caart) do |f| %>
+  <% if @caart.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@caart.errors.count, "error") %> prohibited this caart from being saved:</h2>
+
+      <ul>
+      <% @caart.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

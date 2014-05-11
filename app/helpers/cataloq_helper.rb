@@ -1,0 +1,2 @@
+module CataloqHelper
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Component:</strong>
+  <%= @my_item.component_id %>
+</p>
+
+<p>
+  <strong>Caart:</strong>
+  <%= @my_item.caart_id %>
+</p>
+
+<%= link_to 'Edit', edit_my_item_path(@my_item) %> |
+<%= link_to 'Back', my_items_path %>

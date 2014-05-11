@@ -1,0 +1,15 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h1>Your Pragmatic Catalog</h1>
+<% @components.each do |component| %>
+<div class="entry">
+<%= image_tag(component.image_url) %>
+<h3><%= component.name %></h3>
+<%=sanitize component.description %>
+<div class="price_line">
+<span class="price"><%= component.price %></span>
+<%= button_to 'Add to Cart', my_items_path(:component_id => component) %>
+</div>
+</div>
+<% end %>

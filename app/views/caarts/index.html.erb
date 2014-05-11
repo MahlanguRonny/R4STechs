@@ -1,0 +1,25 @@
+<h1>Listing caarts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @caarts.each do |caart| %>
+      <tr>
+        <td><%= link_to 'Show', caart %></td>
+        <td><%= link_to 'Edit', edit_caart_path(caart) %></td>
+        <td><%= link_to 'Destroy', caart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Caart', new_caart_path %>
