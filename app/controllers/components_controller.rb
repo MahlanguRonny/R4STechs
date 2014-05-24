@@ -1,4 +1,5 @@
 class ComponentsController < ApplicationController
+  http_basic_authenticate_with :name => "MahlanguRonny@gmail.com", :password => "raunny12"
   before_action :set_component, only: [:show, :edit, :update, :destroy]
 
   # GET /components
