@@ -95,14 +95,23 @@ config.action_mailer.default :charset => "utf-8"
 
 
 
-config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: "http:/heroku.com",
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: ENV["MahlanguRonny@gmail.com"],
-  password: ENV["raunny870928"]
+#Sconfig.action_mailer.smtp_settings = {
+  #address: "smtp.gmail.com",
+  #port: 587,
+  #domain: "http:/heroku.com",
+  #uthentication: "plain",
+  #enable_starttls_auto: true,
+  #user_name: ENV["MahlanguRonny@gmail.com"],
+  #password: ENV["raunny870928"]
+
+  ActionMailer::Base.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "gmail.com",
+    :user_name            => "MahlanguRonny@gmail.com",
+    :password             => "raunny870928",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
 }
 
 end
